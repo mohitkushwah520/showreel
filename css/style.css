@@ -1,7 +1,12 @@
+@font-face {
+    font-family: Text;
+    src: url('./Raleway-VariableFont_wght.ttf') format('opentype');
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Text,sans-serif;
 }
 
 .banner {
@@ -65,4 +70,87 @@
     80% {
         border-radius: 60% 40% 32% 68% / 38% 36% 64% 62%;
     }
+}
+
+h1{
+    font-size: 9rem;
+    color: #fff;
+    position: fixed;
+    z-index: 100;
+    text-transform: uppercase;
+    width: 50%;
+    top: 50%;
+    left: 10%;
+    height: auto;
+    transform: translateY(-80%);
+}
+.line{
+    width: 70%;
+    height: 1.5px;
+    background: #fff;
+    position: fixed;
+    bottom: 75px;
+    z-index: 10;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+}
+.navbar ul{
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+    margin-right: 2rem;
+}
+.navbar li{
+    margin: 2rem 3rem;
+}
+.navbar li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.75rem;
+    padding: 0 2rem;
+}
+button{
+    background: none;
+    border: none;
+    margin: 2rem 5rem;
+}
+button span{
+    width: 50px;
+    height: 3px;
+    display: block;
+    background: #fff;
+    margin: .5rem;
+    border-radius: 10px;
+}
+button span:nth-child(1){
+    width: 37.5px;
+}
+button span:nth-child(3){
+    width: 42px;
+}
+.navigation{
+    position: fixed;
+    top: 50%;
+    right: 2%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+.navigation li{
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 50%;
+    margin: 2rem;
+}
+.navigation li:first-child{
+    background: transparent;
+    border: 2px solid #ffff;
 }
