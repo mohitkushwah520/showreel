@@ -142,6 +142,7 @@ button span:nth-child(3){
     right: 2%;
     transform: translateY(-50%);
     z-index: 10;
+    list-style: none;
 }
 .navigation li{
     width: 20px;
@@ -149,6 +150,7 @@ button span:nth-child(3){
     background: #fff;
     border-radius: 50%;
     margin: 2rem;
+    cursor: pointer;
 }
 .navigation li:first-child{
     background: transparent;
